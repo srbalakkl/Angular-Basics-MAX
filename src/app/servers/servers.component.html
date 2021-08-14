@@ -1,12 +1,21 @@
 <p>servers works!</p>
 <h1>here i'm{{txt}},,,,{{'sdf'}},,,{{10}}</h1>
 <br>
-<button (click)="onload()">Save</button>
 
 <button type="button"
         class="btn btn-outline-primary"
-        [disabled]="isButtonDisable">click me
+        [disabled]="isButtonDisable"
+        (click)="onload()"
+>click me
 </button>
+
 <p>{{txt}}</p>
 <p [innerText]="inbinding "><- look here </p>
 <p>{{insidefn}}</p>
+
+<!--Passing data with button-->
+<label for="sname">Serve Name</label>
+<input type="text" id="sname" class="form-control" (input)="whileWrite($event)">
+<p>{{dummy}}</p>
+
+

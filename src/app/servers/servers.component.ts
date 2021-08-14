@@ -36,4 +36,10 @@ export class ServersComponent implements OnInit {
 
     this.insidefn="button is clicked";
   }
+
+  dummy : String = "dummy for text box";
+
+  whileWrite(event:any){
+    this.dummy = (<HTMLInputElement>event.target).value;
+  }
 }
