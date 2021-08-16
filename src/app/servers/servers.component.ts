@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-servers',
@@ -18,13 +18,12 @@ export class ServersComponent implements OnInit {
   }
 
 
-  txt :String = 'string interoperability binding ';
-  inbinding : String ='achieving interoperability binding by using property binding';
+  txt: String = 'string interoperability binding ';
+  inbinding: String = 'achieving interoperability binding by using property binding';
 
-  insidefn : String = "button is not clicked";
+  insidefn: String = "button is not clicked";
 
   isButtonDisable = false;//property bindings
-
 
 
   onload() {
@@ -34,12 +33,13 @@ export class ServersComponent implements OnInit {
     // xmlhttp.open("GET","./SrvFiles/connect.php",true);
     // xmlhttp.send();
 
-    this.insidefn="button is clicked";
+    this.insidefn = "button is clicked";
   }
 
-  dummy : String = "dummy for text box";
+  dummy: String = "dummy for text box";
 
-  whileWrite(event:any){
+  whileWrite(event: any) {
     this.dummy = (<HTMLInputElement>event.target).value;
   }
+
 }
