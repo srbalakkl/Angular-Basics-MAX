@@ -27,12 +27,6 @@ export class ServersComponent implements OnInit {
 
 
   onload() {
-    // const xmlhttp = new XMLHttpRequest();
-    // const myobj = JSON.parse(this.responseText);
-    // console.log(myobj.model);
-    // xmlhttp.open("GET","./SrvFiles/connect.php",true);
-    // xmlhttp.send();
-
     this.insidefn = "button is clicked";
   }
 

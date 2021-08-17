@@ -8,15 +8,15 @@
 
 <!--Passing data with button Events-->
 <label for="sname">Serve Name</label>
-<input type="text" id="sname" class="form-control" (input)="whileWrite($event)">
+<input type="text" id="sname"
+       class="form-control"
+       (input)="whileWrite($event)">
 
 <!--2 way binding or (event + property binding)-->
 <input type="text" id="snam"
        class="form-control"
-       (input)="whileWrite($event)"
        [(ngModel)]="dummy">
 <!--Importing ngModel needs From module to be present app.module.ts-->
-
 <p>{{dummy}}</p>
 
 <!--Disabling button if text box is empty-->

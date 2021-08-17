@@ -4,15 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import {FormsModule} from "@angular/forms";
+import {helloWorld} from "./todelete/helloWorld";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServersComponent
+    ServersComponent,
+      helloWorld,
   ],
     imports: [
         BrowserModule,
-        FormsModule
+        FormsModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
