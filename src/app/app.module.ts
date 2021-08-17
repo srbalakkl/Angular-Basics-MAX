@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import {FormsModule} from "@angular/forms";
 import {helloWorld} from "./todelete/helloWorld";
+import {dependencyInjection} from "./dependencyInjection/dependencyInjection";
 
 @NgModule({
   declarations: [
     AppComponent,
     ServersComponent,
-      helloWorld,
+    helloWorld,
+    dependencyInjection,
   ],
     imports: [
         BrowserModule,
